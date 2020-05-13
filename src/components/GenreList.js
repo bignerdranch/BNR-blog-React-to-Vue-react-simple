@@ -13,7 +13,7 @@ const GenreList = () => {
         setGenres(response.data);
       })
       .catch((error) => console.log("There was an error", error));
-  });
+  }, []);
 
   return (
     <div className="genre-list">
